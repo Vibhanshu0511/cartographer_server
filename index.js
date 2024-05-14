@@ -10,12 +10,7 @@ const cors=require('cors');
 
 const app=express();
 
-app.use(cors({
-
-    origin: ['https://neuron-assignment-client.vercel.app/'], // Change the port to match your frontend port
-    methods: ['GET', 'POST'],
-    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-  }));
+app.use(cors());
 
 
 async function processAndSaveDataShips(filePathShips) {
