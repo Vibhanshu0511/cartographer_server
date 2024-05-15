@@ -279,6 +279,6 @@ app.get('/ships_on_ports/:port', async (req, res) => {
 mongoose.connect('mongodb+srv://be19b035:lR2sLiB1McGwD0sl@geoship.bgezxoa.mongodb.net/?retryWrites=true&w=majority&appName=Geoship', {
     useNewUrlParser: true,
     useUnifiedTopology: true
-}).then(()=>app.listen(8000,
-()=> console.log(`app running on port : http://localhost:8000`)))
+}).then(()=>app.listen(8080,
+()=> console.log(`app running on port : http://localhost:8080`)))
 .catch(error => console.error('Error connecting to MongoDB:', error));
